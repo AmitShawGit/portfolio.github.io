@@ -178,3 +178,50 @@ align-items: center;
     text-align: center;
     
 }
+
+.emp-bg{
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #bd9101;
+}
+.experience{
+    border: 1px solid #bd9101;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 10px;
+}
+.experience::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #bd9101;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(268deg);
+    left: -30px;
+    clip-path: polygon(50.1% 0%, 100% 100%, 0% 100%);
+}
+.company-divider{
+    border-bottom :1px solid #545454;
+    margin: 5px;
+}
+.icon-emp{
+    text-align: center;
+margin-bottom: 20px;
+}
+@media (max-width:600px){
+    .experience::before{
+        display: none !important;
+    }
+    .company-divider{  
+    padding: 10px;
+    }
+    .company-detail{
+        text-align: center;
+    }
+    .tenure{
+        font-size: 16px;
+}
+    }
